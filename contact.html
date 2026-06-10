@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти | AutoFix Service</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AutoFix Service</h1>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Начало</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="about.html">За нас</a></li>
+                    <li><a class="active" href="contact.html">Контакти</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h2>Контакти</h2>
+                <p>Свържете се с нас или изпратете заявка за час.</p>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container contact-layout">
+                <div class="contact-info">
+                    <p class="section-label">AutoFix Service</p>
+                    <h2>Очакваме ви</h2>
+                    <p>
+                        Обадете ни се или попълнете формата. Ще се свържем с вас,
+                        за да потвърдим удобен ден и час.
+                    </p>
+
+                    <div class="contact-list">
+                        <article>
+                            <h3>Телефон</h3>
+                            <a href="tel:+359881234567">+359 88 123 4567</a>
+                        </article>
+                        <article>
+                            <h3>Имейл</h3>
+                            <a href="mailto:office@autofix.bg">office@autofix.bg</a>
+                        </article>
+                        <article>
+                            <h3>Адрес</h3>
+                            <p>гр. София, бул. „България“ 100</p>
+                        </article>
+                        <article>
+                            <h3>Работно време</h3>
+                            <p>Понеделник – петък: 08:30 – 18:00</p>
+                            <p>Събота: 09:00 – 14:00</p>
+                        </article>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="booking-form">
+                    <h2>Запази час</h2>
+
+                    <label for="name">Име</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required>
+
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required>
+
+                    <label for="email">Имейл</label>
+                    <input type="email" id="email" name="email" autocomplete="email">
+
+                    <label for="service">Услуга</label>
+                    <select id="service" name="service" required>
+                        <option value="">Изберете услуга</option>
+                        <option>Компютърна диагностика</option>
+                        <option>Смяна на масло и филтри</option>
+                        <option>Спирачна система</option>
+                        <option>Ходова част</option>
+                        <option>Гуми и баланс</option>
+                        <option>Климатична система</option>
+                    </select>
+
+                    <label for="message">Марка, модел и описание</label>
+                    <textarea id="message" name="message" rows="5"
+                              placeholder="Например: Opel Astra, 2016 г. – шум от предното окачване"></textarea>
+
+                    <button type="submit" class="btn">Изпрати заявка</button>
+                    <p class="form-message" id="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AutoFix Service. Всички права запазени.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
