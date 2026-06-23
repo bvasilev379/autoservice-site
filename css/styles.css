@@ -31,8 +31,16 @@ header .container {
     align-items: center;
 }
 
-header h1 {
+header h1,
+header .logo {
     color: #ffb703;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header .logo {
+    display: inline-block;
 }
 
 nav ul {
